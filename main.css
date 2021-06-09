@@ -1,0 +1,222 @@
+:root {
+    --menu-bg-color: rgba(162,48,34,1);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes typing{
+    from { width: 0; }
+}
+
+
+
+#wrap {
+    width: 100%;
+    height: 100%;
+}
+
+#wrap-head {
+    height: 50px;
+    background-color: var(--menu-bg-color);
+    font-size: 20px;
+    font-weight: 700;
+    display: grid;
+    align-items: center;
+    padding: 0 50px;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+#wrap-head>a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#wrap-head>a:hover {
+    background: white;
+    color: var(--menu-bg-color);
+    transition: 1s linear;
+}
+
+#wrap-head>#active {
+    background: white;
+    color: var(--menu-bg-color);
+}
+
+
+/* Тело сайта */
+
+
+#wrap-body {
+    height: 900px;
+}
+
+.info {
+    background: url("https://thumb.tildacdn.com/tild3861-6439-4431-a561-633462306135/-/format/webp/__2020-09-25__185139.png") no-repeat center center fixed;
+    background-size: cover;
+    padding: 120px;
+}
+
+#about {
+    color: black;
+    font-size: 52px;
+    line-height: 78px;
+    width: 50%;
+    font-weight: 700;
+}
+
+#about2 {
+    margin-top: 90px;
+    font-size: 31px;
+    line-height: 1.55;
+    width: 50%;
+}
+
+#ii-writing {
+    animation: blink 0.7s infinite;
+}
+
+#edge {
+    height: auto;
+    background: var(--menu-bg-color);
+    padding: 100px 0 100px 100px;
+    color: white;
+}
+
+#edge-d {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+#line {
+    border: 3px solid white;
+    margin-left: -100px;
+    margin-top: 50px;
+}
+
+#edge-d-minus {
+    padding-top: 40px;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+#edge-info {
+    font-size: 17px;
+    font-family: 'Verdana';
+}
+
+#edge-info-p {
+    font-size: 24px;
+    padding-top: 50px;
+}
+
+#edge-info-info {
+    width: 60%;
+    padding: 20px 0 0 20px;
+}
+
+#parts {
+    padding-top: 125px;
+}
+
+#part-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    font-weight: 700;
+    font-family: 'Geometria',Arial,sans-serif;
+    padding-bottom: 50px;
+}
+
+#part-wrap {
+    padding: 0 100px;
+}
+
+#ii-parts {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-gap: 5%;
+    padding-bottom: 120px;
+}
+
+#ii-part>img{
+    width: 100%;
+    height: 100%;
+}
+#ii-part>p {
+    font-size: 24px;
+    font-weight: 700;
+    padding-top: 7.5px;
+}
+
+#evm {
+    height: 800px;
+    background: url("imgs/evm.jpg") no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    font-family: 'Geometria',Arial,sans-serif;
+}
+
+#evm-main {
+    padding: 40px 0 0 40px;
+    font-size: 44px;
+}
+#evm-grid {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-gap: 10%;
+}
+#evm-grid>p {
+    padding: 30px 0 0 50px;
+    font-size: 22px;
+}
+
+#evm-grid>img {
+    width: 95%;
+    padding-right: 5%;
+    height: 100%;
+}
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
+#myBtn>img {
+    width: 30px;
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
